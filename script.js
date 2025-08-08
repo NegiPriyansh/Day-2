@@ -48,7 +48,7 @@ btn1.addEventListener('click',function(det){
 
 
 function setTheme(){
-if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+if(!window.matchMedia('(prefers-color-scheme: dark)').matches){
     document.body.classList.add('dark')
     document.body.classList.remove('light')  
 }
